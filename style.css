@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  height: 100vh;
+    background: linear-gradient(45deg, #16995c 0%, #9d0ab1 100%);
+  
+    .signature {
+      font-style: italic;
+      font-size: 12px;
+      color: #212121;
+      padding-top: 5px;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        color: white;
+      }
+    }
+  }
+section {
+    display: none;
+    padding: 2rem;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    background-color: #3333336c;
+    color: #fff;
+    text-align: center;
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.share span{
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
