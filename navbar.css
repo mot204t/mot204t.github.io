@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: right;
   height: 100vh;
-    background: linear-gradient(45deg, #16995c 0%, #9d0ab1 100%);
+  background:#1E2021;
   
     .signature {
       font-style: italic;
@@ -29,11 +29,12 @@ body {
     justify-content: space-between;
     padding: 20px;
     background-color: #222;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.164);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
     color: white;
     text-transform: uppercase;
     overflow: hidden;
-    width: 700px;
+    width: 800px;
+    height: 75px;
     
   
     .logoWrapper {
@@ -41,12 +42,30 @@ body {
   
       .stylish {
         font-weight: bold;
+        font-size: 18px;
+        user-select: none;
+       color: white;
+       background:repeating-linear-gradient(-45deg, rgb(9, 214, 187) 25.5%,cyan 100% );
+       background-size: 600vw 600vw;
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+       animation: slide 20s linear infinite forwards;
+  }
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
       }
   
       .logo {
         padding-left: 5px;
         background: linear-gradient(45deg, #16995c 0%, #9d0ab1 100%);
         color: black;
+        font-weight: bold;
       }
     }
   
@@ -117,8 +136,8 @@ body {
         }
       }
     }
-  }
   
+
   .active.parent {
     transform: translate(-40px, -25px);
     .link {
@@ -141,29 +160,23 @@ body {
   
   .active#clips {
     .subnavigation {
-      transform: translate(-50px, 17px);
+      transform: translate(-30px, 22px);
     }
   }
   
   .active#languages {
     .subnavigation {
-      transform: translate(-200px, 17px);
+      transform: translate(-150px, 22px);
     }
   }
 
   .active#contact {
     .subnavigation {
-      transform: translate(-300px, 17px);
+      transform: translate(-300px, 22px);
     }
   }
   
   .invisible {
     opacity: 0 !important;
     transform: translate(50px, 0);
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
   }
