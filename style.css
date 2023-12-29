@@ -7,7 +7,7 @@ body {
   align-items: center;
   justify-content: right;
   height: 100vh;
-    background: linear-gradient(45deg, #16995c 0%, #9d0ab1 100%);
+  background: #1E2021;
   
     .signature {
       font-style: italic;
@@ -52,4 +52,82 @@ footer {
     opacity: 1;
     transition: 0.3s ease-in-out;
     pointer-events: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+.rgb-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rgb-text h1{
+  user-select: none;
+  font-size: 100px;
+  color: white;
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+              rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 20s linear infinite forwards;
+}
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #010718;
+  overflow: hidden;
+}
+.container{
+  width: 500px;
+  overflow: hidden;
+}
+.container .text{
+  position: relative;
+  color: #4070F4;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container .text.first-text{
+  color: #FFF;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#1E2021;
+  border-left: 2px solid #4070F4;
+  animation: animate 5s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
 }
