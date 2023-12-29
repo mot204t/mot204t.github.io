@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=0.50">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
@@ -22,8 +23,8 @@
     <span class="logo">Ahmed</span>
   </div>
   <ul class="navigation">
-    <li class="parent"><a class="link" href="#">Home</a></li>
-    <li class="parent"><a class="link" href="#">About</a></li>
+    <li class="parent"><a class="link" onclick="showSection('home')">Home</a></li>
+    <li class="parent"><a class="link" onclick="showSection('about')">About</a></li>
     <li class="parent" id="clips">
       <a class="link" href="#"><i class="fas fa-minus"></i> clips <i class="fas fa-plus"></i></a>
       <ul class="subnavigation">
@@ -33,7 +34,7 @@
     <li class="parent" id="languages">
       <a class="link" href="#"><i class="fas fa-minus"></i> languages <i class="fas fa-plus"></i></a>
       <ul class="subnavigation">
-        <li><a class="link" href="#">English</a></li>
+        <li><a class="link" href="#">English</a></li>&ensp;&ensp;&ensp;
         <li><a class="link" href="#">Arabic (Coming soon)</a></li>
       </ul>
     </li>
@@ -44,9 +45,24 @@
       </ul>
     </li>
 </nav>
-    <script type="text/javascript" src="sections.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-    <script type="text/javascript" src="navbar.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ </div>
+ <section id="home" class="active">
+    <div class="rgb-text">
+      <h1>hello</h1>
+    </div>
+ </section>
+ <section id="about">
+  <div class="container">
+    <span class="text first-text"></span>
+    <span class="text sec-text">Freelancer</span>
+  </div>
+ </section>
+
+ </div>
+     <script type="text/javascript" src="sections.js"></script>
+     <script type="text/javascript" src="scripts.js"></script>
+     <script type="text/javascript" src="navbar.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
 </body>
 </html>
