@@ -1,0 +1,18 @@
+section {
+    display: none;
+    padding: rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+section.active {
+    display:flow-root;
+}
+.section {
+    text-align: center; /* Ensure content inside the section is centered */
+    place-items: center; /* Ensure content inside the section is centered */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
